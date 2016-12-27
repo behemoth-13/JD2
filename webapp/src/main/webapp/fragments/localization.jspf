@@ -1,0 +1,40 @@
+<%@ page language="java" contentType="text/html; charset=utf-8"
+    pageEncoding="utf-8"%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/fmt" prefix="fmt"%>
+<!DOCTYPE html PUBLIC>
+<html>
+
+<fmt:setLocale value="${sessionScope.local}"/>
+<fmt:setBundle basename="localization.local" var="loc" />
+
+<!-- text -->
+<fmt:message bundle="${loc}" key="local.common.login" var="login"/>
+<fmt:message bundle="${loc}" key="local.common.password" var="password"/>
+<fmt:message bundle="${loc}" key="local.index.sign_in" var="sign_in"/>
+<fmt:message bundle="${loc}" key="local.registration.registration" var="registration"/>
+<fmt:message bundle="${loc}" key="local.registration.name" var="name"/>
+<fmt:message bundle="${loc}" key="local.registration.surname" var="surname"/>
+<fmt:message bundle="${loc}" key="local.registration.email" var="email"/>
+<fmt:message bundle="${loc}" key="local.registration.phone" var="phone"/>
+<fmt:message bundle="${loc}" key="local.registration.valid_name_surname" var="val_name_surname"/>
+<fmt:message bundle="${loc}" key="local.registration.valid_login" var="val_login"/>
+<fmt:message bundle="${loc}" key="local.registration.valid_email" var="val_email"/>
+<fmt:message bundle="${loc}" key="local.registration.valid_phone" var="val_phone"/>
+<fmt:message bundle="${loc}" key="local.registration.valid_password" var="val_password"/>
+<!-- titles of page -->
+<fmt:message bundle="${loc}" key="local.title.index" var="index_title"/>
+<fmt:message bundle="${loc}" key="local.title.registration" var="registration_title"/>
+<fmt:message bundle="${loc}" key="local.title.about" var="about_title"/>
+<fmt:message bundle="${loc}" key="local.title.price" var="price_title"/>
+<!-- names of button -->
+<fmt:message bundle="${loc}" key="local.localization.en" var="loc_en"/>
+<fmt:message bundle="${loc}" key="local.localization.ru" var="loc_ru"/>
+<fmt:message bundle="${loc}" key="local.index.make_order" var="make_order"/>
+<fmt:message bundle="${loc}" key="local.index.autopark" var="autopark"/>
+<fmt:message bundle="${loc}" key="local.index.prices" var="prices"/>
+<fmt:message bundle="${loc}" key="local.index.about" var="about"/>
+<fmt:message bundle="${loc}" key="local.button.sign_in" var="sign_in_button"/>
+<fmt:message bundle="${loc}" key="local.button.sign_out" var="sign_out_button"/>
+<fmt:message bundle="${loc}" key="local.button.registration" var="registration_button"/>
+<fmt:message bundle="${loc}" key="local.registration.register" var="register_button"/>
+</html>
