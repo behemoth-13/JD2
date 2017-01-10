@@ -20,5 +20,4 @@ public class CodePassword {
         }
         throw new RuntimeException("Exception at Coder: NoSuchAlgorithm");
     }
-
 }

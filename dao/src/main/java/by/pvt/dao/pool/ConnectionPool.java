@@ -19,7 +19,7 @@ import by.pvt.dao.util.ConfigParser;
 
 public class ConnectionPool implements Closeable, SourceInit{
 	private final static  ConnectionPool instance = new ConnectionPool();
-	private final static String CONFIG_XML = "by/htp6/avtobase/dao/pool/config/config.xml";
+	private final static String CONFIG_XML = "src/main/java/by/pvt/resource/config/config.xml";
 	
 	private BlockingQueue<Connection> freeConnections;
 	private BlockingQueue<Connection> busyConnections;
@@ -109,6 +109,4 @@ public class ConnectionPool implements Closeable, SourceInit{
 		}
 		busy.clear();
 	}
-
-
 }

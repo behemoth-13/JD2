@@ -10,6 +10,11 @@
           <element id="archive" name="webapp-1.0-SNAPSHOT.jar">
             <element id="module-output" name="webapp" />
           </element>
+          <element id="library" level="project" name="Maven: javax.transaction:javax.transaction-api:1.2" />
+          <element id="library" level="project" name="Maven: javax.servlet:javax.servlet-api:3.1.0" />
+          <element id="library" level="project" name="Maven: javax.servlet:jsp-api:2.0" />
+          <element id="library" level="project" name="Maven: javax.servlet:servlet-api:2.4" />
+          <element id="library" level="project" name="Maven: javax.servlet:jstl:1.2" />
           <element id="archive" name="command-1.0-SNAPSHOT.jar">
             <element id="module-output" name="command" />
           </element>
@@ -20,6 +25,7 @@
             <element id="module-output" name="dao" />
           </element>
           <element id="library" level="project" name="Maven: mysql:mysql-connector-java:5.1.38" />
+          <element id="library" level="project" name="Maven: javax.annotation:javax.annotation-api:1.2" />
         </element>
       </element>
       <element id="directory" name="META-INF">

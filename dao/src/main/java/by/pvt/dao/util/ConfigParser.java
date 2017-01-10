@@ -28,7 +28,7 @@ public class ConfigParser {
 
 	public void parseConfig(String xmlFile) throws ParserConfigurationException, SAXException, IOException {
 		File configFile = new File(xmlFile);
-		InputStream input = null;
+		InputStream input;
 		
 		if (configFile.exists()) {
 			input = new FileInputStream(configFile);
