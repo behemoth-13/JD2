@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="config.xsd">
+    <bdconnection>
+        <driver>org.gjt.mm.mysql.Driver</driver>
+        <url>jdbc:mysql://127.0.0.1/autobaseTest?useSSL=false</url>
+        <login>root</login>
+        <password>ad10101101</password>
+        <poolSize>5</poolSize>
+    </bdconnection>
+</config>

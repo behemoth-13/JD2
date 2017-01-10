@@ -6,9 +6,8 @@
   </welcome-file-list>
   
   <servlet>
-   <!-- <display-name>Controller</display-name> -->
     <servlet-name>Controller</servlet-name>
-    <servlet-class>by.htp6.avtobase.controller.Controller</servlet-class>
+    <servlet-class>by.pvt.controller.Controller</servlet-class>
   </servlet>
   <servlet-mapping>
     <servlet-name>Controller</servlet-name>
@@ -55,7 +54,7 @@
   </servlet-mapping>
   
   <listener>
-  		<listener-class>by.htp6.avtobase.listener.SourceListener</listener-class>
+  		<listener-class>by.pvt.listener.SourceListener</listener-class>
   </listener>
   
 </web-app>
