@@ -22,8 +22,6 @@ public class ConnectionPool implements Closeable, SourceInit{
 	private final static String CONFIG_XML = "config/config.xml";
 	private BlockingQueue<Connection> freeConnections;
 	private BlockingQueue<Connection> busyConnections;
-	//command-1.0-SNAPSHOT
-	//src/main/java/by/pvt/resource/config/config.xml
 	private ConnectionPool(){}
 	
 	public static ConnectionPool getInstance() {

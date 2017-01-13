@@ -2,6 +2,7 @@
 <config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="config.xsd">
     <bdconnection>
         <driver>org.gjt.mm.mysql.Driver</driver>
+        <!-- jdbc:mysql://localhost:3306/autobase?useUnicode=yes&amp;characterEncoding=UTF-8 -->
         <url>jdbc:mysql://127.0.0.1/autobaseTest?useSSL=false</url>
         <login>root</login>
         <password>ad10101101</password>

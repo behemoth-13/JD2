@@ -10,7 +10,7 @@
 	</head>
 	<body>
 		<%@include file="../fragments/header.jspf"  %>
-		<script type="text/javascript" src="js/validationRegistration.js"></script>
+		<script type="text/javascript" src="../js/validationRegistration.js"></script>
 			<div class="container">
 				<div class="col-md-12">
 					<div class="row" align="center">

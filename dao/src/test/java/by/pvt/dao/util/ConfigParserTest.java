@@ -14,7 +14,7 @@ import static org.junit.Assert.*;
  */
 public class ConfigParserTest {
 
-    private final static String CONFIG_XML = "src/test/java/by/pvt/resource/config/config.xml";
+    private final static String CONFIG_XML = "config/config.xml";
 
     private ConfigParser parserTest = new ConfigParser();
 

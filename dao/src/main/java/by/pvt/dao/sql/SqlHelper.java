@@ -23,7 +23,7 @@ public class SqlHelper {
     public static final String SQL_GET_TRIP_BY_ORDERS_ID = "SELECT * FROM trips WHERE id = ?";
     
     //BRANDS_OF_CARS
-    public static final String SQL_ADD_BRAND_OF_CAR = "INSERT INTO brands_of_cars(brand_of_car, loading_capacity, capacity, cost_per_km) VALUES (?, ?, ?, ?)";
+    public static final String SQL_ADD_BRAND_OF_CAR = "INSERT IGNORE INTO brands_of_cars(brand_of_car, loading_capacity, capacity, cost_per_km) VALUES (?, ?, ?, ?)";
     public static final String SQL_GET_BRANDS_OF_CAR = "SELECT * FROM brands_of_cars";
     public static final String SQL_DELETE_BRAND_OF_CAR_BY_ID = "DELETE FROM brands_of_cars WHERE id = ?";
     public static final String SQL_GET_BRANDS_OF_CAR_BY_NAME = "SELECT * FROM brands_of_cars WHERE brand_of_car = ?";
