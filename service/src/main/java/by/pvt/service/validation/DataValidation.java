@@ -58,7 +58,7 @@ public class DataValidation {
      * Only digits, at least 1 digits up to 6
      */
     public static final Pattern countOfKMPattern =
-            Pattern.compile("\\A[0-9]{3,15}\\z");
+            Pattern.compile("\\A[0-9]{1,6}\\z");
 
     /**
      * Пример: 5543 TE-5

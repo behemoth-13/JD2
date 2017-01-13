@@ -1,0 +1,31 @@
+<%@ page language="java" contentType="text/html; charset=utf-8"
+    pageEncoding="utf-8"%>
+<!DOCTYPE html PUBLIC>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+</head>
+<body>
+	<section class="main_content">
+		<div class="container">
+			<div class="col-md-8">
+				<div class="content-text">
+					<div class="blog_item">
+						<div class="row">
+							<div class="col-md-12">
+								<h3><a href="about">${about}</a></h3>
+							</div>
+							<div class="col-md-4">
+								<img src="images/park_main.png">
+							</div>
+							<div class="col-md-8">
+								<p>${main_content}</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+</body>
+</html>

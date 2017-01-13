@@ -95,7 +95,6 @@ public class SqlOrderDAO extends SqlDAO implements OrderDAO{
     		order.setStatusOrder(set.getInt(COLUMN_NAME_STATUS_ORDER));
     		order.setTimeStatusOrder(set.getString(COLUMN_NAME_TIME_STATUS_ORDER));
     		order.setCreationTime(set.getString(COLUMN_NAME_CREATION_TIME));
-    		
     		list.add(order);
     	}
     	poolInstance.addOpenConnection(connection);

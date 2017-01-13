@@ -1,0 +1,234 @@
+*::-webkit-input-placeholder {
+	color: #666;
+	opacity: 1;
+}
+*:-moz-placeholder {
+	color: #666;
+	opacity: 1;
+}
+*::-moz-placeholder {
+	color: #666;
+	opacity: 1;
+}
+*:-ms-input-placeholder {
+	color: #666;
+	opacity: 1;
+}
+
+body input:focus:required:invalid,
+body textarea:focus:required:invalid {
+	border: red 2px solid
+}
+body input:required:valid,
+body textarea:required:valid {
+	border: green 2px solid
+}
+body {
+	font-family: "RobotoRegular", sans-serif;
+	font-size: 16px;
+}
+.header_topline {
+	background-color: #43484C;
+	padding: 15px 0;
+	color: #fff;
+}
+.header_topline a {
+	color: #fff;
+}
+.header_topline input {
+	color: #555;
+}
+.top_links {
+	display: inline-block;
+	vertical-align: middle;
+	z-index: 10;
+}
+.top_links a {
+	text-decoration: underline;
+}
+.top_links a:hover {
+	text-decoration: none;
+}
+.button_local > img {
+	margin: -9px;
+    height: 29px;
+}
+.soc_buttons {
+	float: right;
+}
+.soc_buttons > a {
+	font-size: 28px;
+	margin-left: 8px;
+}
+.soc_buttons > form {
+	display: inline-block;
+	font-size: 20px;
+	margin-left: 8px;
+}
+.auth_buttons,
+.menu_button {
+	background-color: transparent;
+	border: medium none;
+	font-size: 26px;
+}
+.menu_button {
+	color: #fff;
+	padding: 8px 15px 0;
+}
+.logo {
+	display: block;
+	padding: 15px 0;
+	color: #fff;
+	font-family: "RobotoMedium";
+	font-size: 73px;
+	text-align: center;
+}
+.top_header {
+	background-color: #4AAAD2;
+}
+.menu {
+	background-color: #3797bf;
+	color: #fff;
+	margin-bottom: 0px; 
+}
+.menu button {
+	background-color: #3797bf;
+	color: #fff;
+	padding: 15px;
+	display: block;
+	-webkit-transition: all .25s;
+	-o-transition: all .25s;
+	transition: all .25s;
+	border: 0;
+	margin: 0;
+	list-style-type: none;
+	float: left;
+	text-transform: uppercase;
+	z-index: 12;
+	margin-bottom: -20px;
+}
+.menu button:hover {
+	background-color: #2787af;
+}
+.menu a {
+	color: #fff;
+	padding: 15px;
+	display: block;
+	-webkit-transition: all .25s;
+	-o-transition: all .25s;
+	transition: all .25s;
+}
+.menu a:hover {
+	background-color: #2787af;
+}
+.menu ul {
+	padding: 0;
+	margin: 0;
+	list-style-type: none;
+	float: left;
+	text-transform: uppercase;
+	z-index: 12;
+}
+.menu ul li {
+	display: inline-block;
+}
+.top_contacts {
+	float: right;
+	font-size: 32px;
+	padding: 0 15px;
+	background-color: #2787af;
+	line-height: 53px;
+}
+h1 {
+	color: #fff;
+	font-family: "RobotoBold";
+	text-transform: uppercase;
+	text-align: center;
+	font-size: 50px;
+}
+.sider_container {
+	position: relative;
+}
+.sider_container img {
+	max-width: 100%;
+}
+.next_button,
+.prev_button {
+	color: #fff;
+	font-size: 46px;
+	position: absolute;
+	z-index: 10;
+	top: 40%;
+	cursor: pointer;
+	background-color: rgba(255,255,255, .5);
+	padding: 0 25px;
+	border-radius: 10em; 
+}
+.next_button {
+	right: 20px;
+}
+.prev_button {
+	left: 20px;
+}
+section.order {
+	background-color: #eee;
+	padding: 25px 0;
+}
+.sell_descr {
+	font-size: 22px;
+	padding-top: 5px;
+}
+.button {
+	border: medium none;
+	display: inline;
+	background-color: #2bc6a4;
+	color: #fff;
+	border-radius: 5px;
+	padding: 4px 7px;
+	text-align: center;
+}
+.button:hover {
+	background-color: #4feac8;
+}
+.button:active {
+	background-color: #14af8d;
+}
+.sell_right .button {
+	float: right;
+}
+.hidden {
+	display: none;
+}
+.pop_form input[type="text"] {
+	display: block;
+	width: 90%;
+	margin: 0 auto 12px;
+	line-height: 24px;
+	border: #999 2px solid
+}
+.pop_form .button {
+	margin: 15px auto 0;
+}
+.pop_form h3 {
+	margin: 10px auto 15px;
+	text-align: center;
+	font-weight: normal;
+}
+.blog_item img {
+	max-width: 100%;
+}
+.table {
+	border-collapse: collapse;
+}
+.table th{
+	padding: 5px;
+	border: 1px solid black;
+}
+.table tr{
+	padding: 5px;
+	border: 1px solid black;
+}
+.table td{
+	padding: 5px;
+	border: 1px solid black;
+}

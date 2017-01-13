@@ -39,6 +39,7 @@ public class SourceListener implements ServletContextListener{
 			daoFactory.init();
 			serviceFactory.init();
 			commandFactory.init();
+
 		} catch (InitException e) { }
 	}
 }

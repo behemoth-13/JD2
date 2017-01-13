@@ -11,7 +11,6 @@ public class Trip implements Serializable{
 	private int driversUsersId;
 	private int cost;
 	
-	
 	public int getOrderId() {
 		return orderId;
 	}
@@ -24,8 +23,7 @@ public class Trip implements Serializable{
 	public int getCost() {
 		return cost;
 	}
-	
-	
+
 	public void setOrderId(int orderId) {
 		this.orderId = orderId;
 	}
@@ -38,7 +36,4 @@ public class Trip implements Serializable{
 	public void setCost(int cost) {
 		this.cost = cost;
 	}
-	
-	
-
 }

@@ -2,15 +2,15 @@ function check(formID) {
     var pattern = null;
         
     switch(formID){
-        case 'name':
+        case 'weight':
             pattern =  new RegExp('(^[A-Z]?[a-z]{1,15}$)|(^[А-Я]?[а-я]{1,15}$)', '');
             break;
                 
-        case 'surname':
+        case 'capacity':
             pattern =  new RegExp('(^[A-Z]?[a-z]{1,15}$)|(^[А-Я]?[а-я]{1,15}$)', '');
             break;
                 
-        case 'login':
+        case 'distance':
             pattern =  new RegExp('(^[a-zA-Z0-9]{3,15}$)', '');
             break;
                 
@@ -24,7 +24,7 @@ function check(formID) {
             
         case 'phone':
             if(document.getElementById(formID + 'Form').value == '') {
-                document.getElementById(formID).style.color = 'green';
+                document.getElementById(formID).style.color = '#2bc6a4';
                 return;
             }
             pattern =  new RegExp('^(\\+\\d{3}\\s\\d{2})?\\s?\\d{3}(-|\\s)?\\d{2}(-|\\s)?\\d{2}$', '');
@@ -34,8 +34,8 @@ function check(formID) {
     inputStr = document.getElementById(formID + 'Form').value;
         
     if(pattern.test(inputStr)) {
-        document.getElementById(formID).style.color = 'green';
+        document.getElementById(formID).style.color = '#2bc6a4';
     } else {
-        document.getElementById(formID).style.color = 'red';
+        document.getElementById(formID).style.color = '#FF3D3D';
     }
 }

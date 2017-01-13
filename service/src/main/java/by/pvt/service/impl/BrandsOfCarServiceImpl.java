@@ -47,5 +47,4 @@ public class BrandsOfCarServiceImpl  extends Service implements BrandsOfCarServi
 			throw new OperationNotExecutedException("BrandsOfCarServiceImpl.getBrandsOfCars not executed");
 		}
 	}
-
 }

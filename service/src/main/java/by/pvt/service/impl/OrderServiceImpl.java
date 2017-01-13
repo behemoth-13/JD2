@@ -60,13 +60,13 @@ public class OrderServiceImpl  extends Service implements OrderService{
 		} catch (SQLException | InterruptedException e) {
 			throw new OperationNotExecutedException("OrderServiceImpl.getOrdersByUsersId not executed");
 		}
-		if ((user == null) || (user.getRole() != Roles.USER.getCodeRole()) || (user.getRole() != Roles.DRIVER.getCodeRole())){
+		if ((user == null) || (user.getRole() != Roles.USER.getCodeRole())){
 			throw new IllegalArgumentException("User is not exist");
 		}
 		
 		OrderDAO orderDao = (OrderDAO) daoFactory.getOperationDAO(DaoName.ORDER_DAO);
 		try {
-			result = orderDao.getOrders();
+			result = orderDao.getOrdersByUsersId(userId);
 		} catch (SQLException | InterruptedException e) {
 			throw new OperationNotExecutedException("OrderServiceImpl.getOrdersByUsersId not executed");
 		}
@@ -103,13 +103,13 @@ public class OrderServiceImpl  extends Service implements OrderService{
 	
 	private String validateOrder(Order order) {
 		StringBuilder messageException = new StringBuilder();
-		if (order.getWeight() <= 1 || order.getWeight() >= 200) {
+		if (order.getWeight() <= 0 || order.getWeight() >= 200) {
 			messageException.append("weight is not valid \n");
         }
-		if (order.getCapacity() <= 1 || order.getWeight() >= 40) {
+		if (order.getCapacity() <= 0 || order.getCapacity() >= 800) {
 			messageException.append("capacity is not valid \n");
         }
-		if (order.getDistance() <= 20 || order.getWeight() >= 10000) {
+		if (order.getDistance() <= 20 || order.getDistance() >= 10000) {
 			messageException.append("distance is not valid \n");
         }
 		return messageException.toString();

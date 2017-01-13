@@ -12,7 +12,10 @@ public class Localization  extends Command {
 	@Override
 	public String execute(HttpServletRequest request, HttpServletResponse response) {
 		HttpSession session = request.getSession(true);
-		session.setAttribute("local", request.getParameter("local"));
+		String locale = request.getParameter("local");
+		if (locale != null && (locale.equals("ru") || locale.equals("en"))){
+			session.setAttribute("local", locale);
+		}
 		return PageNames.START_PAGE;
 	}
 }

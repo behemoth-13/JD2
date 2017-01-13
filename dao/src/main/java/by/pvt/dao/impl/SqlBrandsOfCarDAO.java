@@ -98,7 +98,7 @@ private static SqlBrandsOfCarDAO instance;
     	PreparedStatement ps = connection.prepareStatement(query);
     	
     	ps.setInt(1, id);
-    	//TODO  DELETE FROM `avtobase`.`brands_of_cars` WHERE `fid`='�����';
+    	//TODO  DELETE FROM `avtobase`.`brands_of_cars` WHERE `fid`='номер';
     	
     	ps.executeQuery();
     	
@@ -113,10 +113,6 @@ private static SqlBrandsOfCarDAO instance;
         
         ps.setString(1, brandName);
         ResultSet result = ps.executeQuery();
-        if (!result.wasNull()) {
-        	return true;
-        } else {
-        	return false;
-        }
+		return !result.wasNull();
 	}
 }

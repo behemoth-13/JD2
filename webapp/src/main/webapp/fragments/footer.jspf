@@ -1,0 +1,42 @@
+<%@ page language="java" contentType="text/html; charset=utf-8"
+    pageEncoding="utf-8"%>
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+</head>
+	<body>
+	<br>
+	<br>
+	<br>
+	<br>
+		<footer class="footer1">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-4">
+						<b> 
+							<i class="fa fa-user"></i> Author:
+						</b> Alexei Afanasyeu
+					</div>
+					<div class="col-md-4">
+						<b>Helpline Numbers (8AM to 10PM):</b> <i class="fa fa-mobile"></i> 80292773547
+					</div>
+					<div class="col-md-4">
+						<b>
+							<i class="fa fa-envelope" aria-hidden="true"></i> Email
+						</b>
+						<a href="https://mail.google.com/mail/u/0/#inbox">gmail.com</a>
+					</div>
+				</div>
+			</div>
+			<div class="container">
+				<div class="row">
+					<div class="col-xs-12 col-sm-8 col-md-8 col-lg-8">
+						<div class="copyright">	© 2016, autobase, Project special for pvt</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+		<br>
+	</body>
+</html>

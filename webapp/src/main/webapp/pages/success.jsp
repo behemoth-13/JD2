@@ -1,12 +1,24 @@
 <%@ page language="java" contentType="text/html; charset=utf-8"
     pageEncoding="utf-8"%>
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<%@include file="../fragments/localization.jspf"%> <!-- localization -->
+<%@include file="../fragments/common.jspf"%>
+<!DOCTYPE html PUBLIC >
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-<title>Получилось</title>
+<title>${success_title}</title>
 </head>
 <body>
-
+<%@include file="../fragments/header.jspf"%>
+<section class="main_content">
+	<div class="row">
+		<div class="col-md-12">
+			<div>
+				<h2>${about_profile}</h2>
+			</div>
+		</div>
+	</div>
+</section>
+<%@include file="../fragments/footer.jspf"%>
 </body>
 </html>

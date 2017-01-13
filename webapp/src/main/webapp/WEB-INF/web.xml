@@ -6,6 +6,7 @@
   </welcome-file-list>
   
   <servlet>
+   <!-- <display-name>Controller</display-name> -->
     <servlet-name>Controller</servlet-name>
     <servlet-class>by.pvt.controller.Controller</servlet-class>
   </servlet>
@@ -33,7 +34,7 @@
     <url-pattern>/registration</url-pattern>
   </servlet-mapping>
   
-    <servlet>
+  <servlet>
     <servlet-name>about</servlet-name>
     <jsp-file>/pages/about.jsp</jsp-file>
   </servlet>
@@ -43,7 +44,7 @@
     <url-pattern>/about</url-pattern>
   </servlet-mapping>
   
-      <servlet>
+  <servlet>
     <servlet-name>price</servlet-name>
     <jsp-file>/pages/price.jsp</jsp-file>
   </servlet>
@@ -51,6 +52,26 @@
   <servlet-mapping>
     <servlet-name>price</servlet-name>
     <url-pattern>/price</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>profile</servlet-name>
+    <jsp-file>/pages/profile.jsp</jsp-file>
+  </servlet>
+  
+  <servlet-mapping>
+    <servlet-name>profile</servlet-name>
+    <url-pattern>/profile</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>make_order</servlet-name>
+    <jsp-file>/pages/makeOrder.jsp</jsp-file>
+  </servlet>
+  
+  <servlet-mapping>
+    <servlet-name>make_order</servlet-name>
+    <url-pattern>/make_order</url-pattern>
   </servlet-mapping>
   
   <listener>

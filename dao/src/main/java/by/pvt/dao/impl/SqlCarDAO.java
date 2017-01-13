@@ -53,7 +53,7 @@ public class SqlCarDAO extends SqlDAO implements CarDAO{
     	PreparedStatement ps = connection.prepareStatement(query);
     	
     	ps.setString(1, stateNumber);
-    	//TODO  DELETE FROM `avtobase`.`brands_of_cars` WHERE `id`='�����';
+    	//TODO  DELETE FROM `avtobase`.`brands_of_cars` WHERE `id`='номер';
     	
     	ps.executeQuery();
     	

@@ -19,11 +19,11 @@ import by.pvt.dao.util.ConfigParser;
 
 public class ConnectionPool implements Closeable, SourceInit{
 	private final static  ConnectionPool instance = new ConnectionPool();
-	private final static String CONFIG_XML = "src/main/java/by/pvt/resource/config/config.xml";
-	
+	private final static String CONFIG_XML = "config/config.xml";
 	private BlockingQueue<Connection> freeConnections;
 	private BlockingQueue<Connection> busyConnections;
-	
+	//command-1.0-SNAPSHOT
+	//src/main/java/by/pvt/resource/config/config.xml
 	private ConnectionPool(){}
 	
 	public static ConnectionPool getInstance() {
@@ -88,25 +88,27 @@ public class ConnectionPool implements Closeable, SourceInit{
 	
 	@Override
 	public void close() throws IOException {
-		BlockingQueue<Connection> free = freeConnections;
-		freeConnections = null;
-		for (Connection con : free) {
-			try {
-				con.close();
-			} catch (SQLException e) {
-				throw new IOException();
+		if (freeConnections != null) {
+			BlockingQueue<Connection> free = freeConnections;
+			freeConnections = null;
+			for (Connection con : free) {
+				try {
+					con.close();
+				} catch (SQLException e) {
+					throw new IOException();
+				}
 			}
-		}
-		free.clear();
-		BlockingQueue<Connection> busy = busyConnections;
-		freeConnections = null;
-		for (Connection con : busy) {
-			try {
-				con.close();
-			} catch (SQLException e) {
-				throw new IOException();
+			free.clear();
+			BlockingQueue<Connection> busy = busyConnections;
+			freeConnections = null;
+			for (Connection con : busy) {
+				try {
+					con.close();
+				} catch (SQLException e) {
+					throw new IOException();
+				}
 			}
+			busy.clear();
 		}
-		busy.clear();
 	}
 }

@@ -31,5 +31,4 @@ public class ParameterNames {
 	public static final String U_PHONE = "up";
 	public static final String U_PASSWORD = "ua";
 	public static final String U_ID_BAN_USER = "ui";
-	
 }

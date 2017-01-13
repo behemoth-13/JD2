@@ -6,10 +6,10 @@ public class Order implements Serializable {
 
 	private static final long serialVersionUID = -8560462537196218698L;
 	
-	private int Id;
+	private int id;
 	private int userId;
-	private int weight;   // 1 to 200
-	private int capacity; // 1  to 40
+	private int weight;   // 0 to 200
+	private int capacity; // 0  to 800
 	private int distance; // 20 to 10 000
 	private int statusOrder; // 0 to 4
 	private String timeStatusOrder;
@@ -17,7 +17,7 @@ public class Order implements Serializable {
 	
 	
 	public int getId() {
-		return Id;
+		return id;
 	}
 	public int getUserId() {
 		return userId;
@@ -43,7 +43,7 @@ public class Order implements Serializable {
 	
 	
 	public void setId(int id) {
-		Id = id;
+		this.id = id;
 	}
 	public void setUserId(int userId) {
 		this.userId = userId;

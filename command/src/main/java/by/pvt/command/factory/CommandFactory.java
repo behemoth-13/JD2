@@ -37,6 +37,7 @@ public class CommandFactory implements SourceInit {
 	}
 	
 	public Command getCommand(String commandName) {
+		//System.out.println(commandName);
 		if (map.containsKey(commandName)) {
 			return map.get(commandName);
 		} else {
