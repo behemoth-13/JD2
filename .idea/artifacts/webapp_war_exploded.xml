@@ -11,8 +11,8 @@
             <element id="module-output" name="webapp" />
           </element>
           <element id="library" level="project" name="Maven: javax.transaction:javax.transaction-api:1.2" />
-          <element id="library" level="project" name="Maven: javax.servlet:javax.servlet-api:3.1.0" />
-          <element id="library" level="project" name="Maven: javax.servlet:jsp-api:2.2" />
+          <element id="library" level="project" name="Maven: javax.servlet:javax.servlet-api:4.0.0-b01" />
+          <element id="library" level="project" name="Maven: javax.servlet.jsp:jsp-api:2.2" />
           <element id="library" level="project" name="Maven: javax.servlet:jstl:1.2" />
           <element id="archive" name="command-1.0-SNAPSHOT.jar">
             <element id="module-output" name="command" />

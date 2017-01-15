@@ -39,7 +39,6 @@ public class SqlBrandsOfCarDAOTest extends SqlDAO{
     public void addBrandOfCar() throws Exception {
         addBrandofCar("Mercedes");
         addBrandofCar("Toyota");
-
     }
 
     @Test
@@ -68,7 +67,7 @@ public class SqlBrandsOfCarDAOTest extends SqlDAO{
 
     private void addBrandofCar(String name) throws SQLException, InterruptedException {
         BrandOfCar brandOfCarTest = new BrandOfCar();
-        brandOfCarTest.setName("name");
+        brandOfCarTest.setName(name);
         brandOfCarTest.setLoadingCapacity(1);
         brandOfCarTest.setCapacity(1);
         brandOfCarTest.setCostPerKM(1);
