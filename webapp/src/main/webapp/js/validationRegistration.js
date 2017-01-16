@@ -2,15 +2,15 @@ function check(formID) {
     var pattern = null;
         
     switch(formID){
-        case 'weight':
+        case 'name':
             pattern =  new RegExp('(^[A-Z]?[a-z]{1,15}$)|(^[А-Я]?[а-я]{1,15}$)', '');
             break;
                 
-        case 'capacity':
+        case 'surname':
             pattern =  new RegExp('(^[A-Z]?[a-z]{1,15}$)|(^[А-Я]?[а-я]{1,15}$)', '');
             break;
                 
-        case 'distance':
+        case 'login':
             pattern =  new RegExp('(^[a-zA-Z0-9]{3,15}$)', '');
             break;
                 
