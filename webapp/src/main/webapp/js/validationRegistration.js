@@ -24,7 +24,7 @@ function check(formID) {
             
         case 'phone':
             if(document.getElementById(formID + 'Form').value == '') {
-                document.getElementById(formID).style.color = '#2bc6a4';
+                document.getElementById(formID).style.color = '#2BC6A4';
                 return;
             }
             pattern =  new RegExp('^(\\+\\d{3}\\s\\d{2})?\\s?\\d{3}(-|\\s)?\\d{2}(-|\\s)?\\d{2}$', '');
@@ -34,7 +34,7 @@ function check(formID) {
     inputStr = document.getElementById(formID + 'Form').value;
         
     if(pattern.test(inputStr)) {
-        document.getElementById(formID).style.color = '#2bc6a4';
+        document.getElementById(formID).style.color = '#2BC6A4';
     } else {
         document.getElementById(formID).style.color = '#FF3D3D';
     }

@@ -52,6 +52,13 @@ public class SqlBrandsOfCarDAOTest extends SqlDAO{
 
     @Test
     public void getBrandsOfCarsById() throws Exception {
+        /*addBrandofCar("Mercedes");
+        addBrandofCar("Toyota");
+        List<BrandOfCar> list;
+        list = sqlBrandsOfCarDAOTest.getBrandsOfCars();
+        BrandOfCar brandOfCarExpexted = list.get(0);
+        int idTest = brandOfCarTest.getId();
+        BrandOfCar brandOfCarTest = sqlBrandsOfCarDAOTest.getBrandsOfCarsById();*/
 
     }
 

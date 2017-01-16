@@ -10,7 +10,7 @@
 	</head>
 	<body>
 		<%@include file="../fragments/header.jspf"  %>
-		<script type="text/javascript" src="../js/validationRegistration.js"></script>
+		<script type="text/javascript" src="js/validationRegistration.js"></script>
 			<div class="container">
 				<div class="col-md-12">
 					<div class="row" align="center">
@@ -38,7 +38,6 @@
 								${password} <input type="password" maxlength="15" name="ua" id="passwordForm" onKeyUp="check('password')" >
 								<p id="password" style="color:#FF3D3D">${val_password}</p>
 								<br>
-								
 								<button class="button" name="cm" value="ur" type="submit">${register_button}</button>
 							</form>
 						</div>
