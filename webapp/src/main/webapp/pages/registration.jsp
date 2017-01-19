@@ -19,9 +19,11 @@
 		
 							<form action="Controller" method="post">
 							
-							    ${name} <input type="text" maxlength="15" name="un" id="nameForm" onKeyUp="check('name')"><p id="name" style="color: #FF3D3D">${val_name_surname}</p>
+							    ${name} <input type="text" maxlength="15" name="un" id="nameForm" onKeyUp="check('name')"><p id="name" style="color: #FF3D3D">
+							    ${val_name_surname}</p>
 							    ${surname} <input type="text" maxlength="15" name="us" id="surnameForm" onKeyUp="check('surname')">
-							    <p id="surname" style="color:#FF3D3D">${val_name_surname}</p>
+							    <p id="surname" style="color:#FF3D3D">
+							    ${val_name_surname}</p>
 							    <br>
 							    
 								${login} <input type="text" maxlength="15" name="ul" id="loginForm" onKeyUp="check('login')">

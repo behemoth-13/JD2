@@ -14,7 +14,7 @@ import by.pvt.service.impl.UserServiceImpl;
 
 public class ServiceFactory implements SourceInit{
 	private static final ServiceFactory instance = new ServiceFactory();
-	public static Map<ServiceName, Service> map = new HashMap<>();
+	private static Map<ServiceName, Service> map = new HashMap<>();
 	
 	private ServiceFactory(){}
 	

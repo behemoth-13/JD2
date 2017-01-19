@@ -75,4 +75,8 @@
 <fmt:message bundle="${loc}" key="local.userMenu.profile" var="profile"/>
 <fmt:message bundle="${loc}" key="local.userMenu.make_order" var="make_order"/>
 <fmt:message bundle="${loc}" key="local.userMenu.my_orders" var="my_orders"/>
+<fmt:message bundle="${loc}" key="local.userMenu.users" var="users"/>
+<fmt:message bundle="${loc}" key="local.userMenu.orders" var="orders"/>
+<fmt:message bundle="${loc}" key="local.userMenu.trips" var="trips"/>
+<fmt:message bundle="${loc}" key="local.userMenu.cars" var="cars"/>
 </html>

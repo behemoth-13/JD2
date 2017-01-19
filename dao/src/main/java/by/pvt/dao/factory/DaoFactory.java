@@ -14,7 +14,7 @@ import by.pvt.exception.InitException;
 
 public class DaoFactory implements SourceInit{
 	private static final DaoFactory instance = new DaoFactory();
-	public static Map<DaoName, SqlDAO> map = new HashMap<>();
+	private static Map<DaoName, SqlDAO> map = new HashMap<>();
 	
 	private DaoFactory(){}
 	
