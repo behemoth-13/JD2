@@ -16,7 +16,7 @@ public class SqlCarDAO extends SqlDAO implements CarDAO{
 	
 	private static SqlCarDAO instance;
 	
-	private final static String COLUMN_NAME_DRIVERS_USERS_ID = "driver_users_id";
+	private final static String COLUMN_NAME_DRIVERS_USERS_ID = "drivers_users_id";
 	private final static String COLUMN_NAME_BRANDS_OF_CARS_ID = "brands_of_cars_id";
 	private final static String COLUMN_NAME_STATE_NUMBER = "state_number";
 	private final static String COLUMN_NAME_STATUS = "status";

@@ -21,6 +21,7 @@ public class AttributeNames {
 	public static final String LIST_BRANDS_OF_CARS = "LIST_BRANDS_OF_CARS";
 	
 	//CAR
+	public static final String LIST_CARS = "LIST_CARS";
 	
 	//ORDER
 	public static final String LIST_ORDERS = "LIST_ORDERS";
