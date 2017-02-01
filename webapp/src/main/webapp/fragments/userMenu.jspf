@@ -12,17 +12,29 @@
 			<nav class="menu clearfix">
 				<button class="main_menu_button hidden-md hidden-lg"><i class="fa fa-bars"></i></button>
 				<ul>
-					<li><a href="profile">${profile}</a></li>
+					<li>
+						<a href="profile">${profile}</a>
+					</li>
 					<li>
 						<form action="Controller" method="get">
 							<button name="cm" value="ug" type="submit">${users}</button>
 						</form>
 					</li>
-					<li><form action="Controller" method="get">
-						<button name="cm" value="ou" type="submit">${trips}</button>
-					</form>
+					<li>
+						<form action="Controller" method="get">
+							<button name="cm" value="og" type="submit">${orders}</button>
+						</form>
 					</li>
-					<li><a href="#">${prices}</a></li>
+					<li>
+						<form action="Controller" method="get">
+						<button name="cm" value="tg" type="submit">${trips}</button>
+						</form>
+					</li>
+					<li>
+						<form action="Controller" method="get">
+							<button name="cm" value="cg" type="submit">${cars}</button>
+						</form>
+					</li>
 				</ul>
 			</nav>
 		</c:if>

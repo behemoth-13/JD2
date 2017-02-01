@@ -36,6 +36,6 @@ public class GetOrdersByStatus extends Command {
 			request.setAttribute(AttributeNames.EXCEPTION, e.getMessage());
 			return PageNames.EXCEPTION;
 		}
-		return PageNames.SHOW_ORDERS_BY_STATUS;
+		return PageNames.SHOW_ORDERS;
 	}
 }
