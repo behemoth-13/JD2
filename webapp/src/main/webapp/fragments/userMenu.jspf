@@ -9,7 +9,17 @@
 <body>
 	<c:if test="${sessionScope.LOGIN != null}">
 		<c:if test="${sessionScope.ROLE == 0}"><!-- admin -->
-			admin
+			<nav class="menu clearfix">
+				<button class="main_menu_button hidden-md hidden-lg"><i class="fa fa-bars"></i></button>
+				<ul>
+					<li><a href="profile">${profile}</a></li>
+					<li>
+						<form action="Controller" method="get">
+							<button name="cm" value="ug" type="submit">Users</button>
+						</form>
+					</li>
+				</ul>
+			</nav>
 		</c:if>
 		<c:if test="${sessionScope.ROLE == 1}"><!-- user -->
 			<nav class="menu clearfix">
