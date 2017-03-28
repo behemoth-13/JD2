@@ -102,7 +102,7 @@
                                 </c:if>
                             </td>
                             <td>
-                                <button class="button" name="cm" value="ur" type="submit">${register_button}</button>
+                                <button class="button" name="cm" value="uu" type="submit">применить</button>
                             </td>
                         </form>
                     </tr>
