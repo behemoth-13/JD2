@@ -12,4 +12,5 @@ public interface UserDAO {
 	List<User> getUsers() throws SQLException, InterruptedException;
 	User getUserById(int id) throws SQLException, InterruptedException;
 	void banUserById(int id) throws SQLException, InterruptedException;
+    void updateUserRole(int userId, int userRole) throws InterruptedException, SQLException;
 }

@@ -30,6 +30,7 @@
                     <c:forEach items="${requestScope.LIST_USERS}" var = "user" >
                     <tr>
                         <form action="Controller" method="post">
+                            <input type="hidden" name="ui" value="${user.id}">
                             <td>${user.id}</td>
                             <td>${user.login}</td>
                             <td>${user.name}</td>
@@ -40,18 +41,17 @@
                             <td>
 
                                 <c:if test="${user.role == 0}">
-                                    <select size="1">
-                                    <!--<option disabled>Выберите</option>-->
+                                    <select size="1" name="ur">
                                     <option value="1">${role_user}</option>
                                     <option value="2">${role_guest}</option>
                                     <option value="3">${role_manager}</option>
                                     <option value="4">${role_driver}</option>
-                                    <option value="5">${role_banned_user}</option>
+                                    <option value="5" name="ul">${role_banned_user}</option>
                                     <option selected value="${user.role}">${role_admin}</option>
                                     </select>
                                 </c:if>
                                 <c:if test="${user.role == 1}">
-                                    <select size="1">
+                                    <select size="1" name="ur">
                                         <option value="0">${role_admin}</option>
                                         <option value="2">${role_guest}</option>
                                         <option value="3">${role_manager}</option>
@@ -61,7 +61,7 @@
                                     </select>
                                 </c:if>
                                 <c:if test="${user.role == 2}">
-                                    <select size="1">
+                                    <select size="1" name="ur">
                                         <option value="0">${role_admin}</option>
                                         <option value="1">${role_user}</option>
                                         <option value="3">${role_manager}</option>
@@ -71,7 +71,7 @@
                                     </select>
                                 </c:if>
                                 <c:if test="${user.role == 3}">
-                                    <select size="1">
+                                    <select size="1" name="ur">
                                         <option value="0">${role_admin}</option>
                                         <option value="1">${role_user}</option>
                                         <option value="2">${role_guest}</option>
@@ -81,7 +81,7 @@
                                     </select>
                                 </c:if>
                                 <c:if test="${user.role == 4}">
-                                    <select size="1">
+                                    <select size="1" name="ur">
                                         <option value="0">${role_admin}</option>
                                         <option value="1">${role_user}</option>
                                         <option value="2">${role_guest}</option>
@@ -91,7 +91,7 @@
                                     </select>
                                 </c:if>
                                 <c:if test="${user.role == 5}">
-                                    <select size="1">
+                                    <select size="1" name="ur">
                                         <option value="0">${role_admin}</option>
                                         <option value="1">${role_user}</option>
                                         <option value="2">${role_guest}</option>

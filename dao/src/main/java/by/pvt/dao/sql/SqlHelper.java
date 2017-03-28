@@ -7,6 +7,7 @@ public class SqlHelper {
     public static final String SQL_GET_USERS = "SELECT * FROM users";
     public static final String SQL_GET_USER_BY_ID = "SELECT * FROM users WHERE id = ?";
     public static final String SQL_BAN_USER_BY_ID = "UPDATE users SET role = ? WHERE id = ?";
+    public static final String SQL_UPDATE_USER_ROLE_BY_ID = "UPDATE users SET role = ? WHERE id = ?";
     
     //DRIVERS
     

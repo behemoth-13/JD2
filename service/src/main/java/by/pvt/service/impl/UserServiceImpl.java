@@ -89,7 +89,21 @@ public class UserServiceImpl  extends Service implements UserService{
 			}
 			return user;
 		}
-	
+
+	@Override
+	public void updateUserRole(int userId, int userRole) throws OperationNotExecutedException, IllegalArgumentException {
+		UserDAO dao = (UserDAO) daoFactory.getOperationDAO(DaoName.USER_DAO);
+		Roles[] roles = Roles.values();
+		if (userRole < roles[0].getCodeRole() || userRole > roles[roles.length -1].getCodeRole()) {
+			throw new IllegalArgumentException("Role is not exist");
+		}
+		try {
+			dao.updateUserRole(userId, userRole);
+		} catch (SQLException | InterruptedException e) {
+			throw new OperationNotExecutedException("Role is not changed");
+		}
+	}
+
 	private String validateUser(User user, String password) {
 		StringBuilder messageException = new StringBuilder();
 		if (!DataValidation.namePattern.matcher(user.getName()).matches()) {

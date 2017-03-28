@@ -25,7 +25,7 @@ public class BanUserById extends Command {
 			return PageNames.EXCEPTION;
 		}
 		try {
-			int idBanUser = Integer.parseInt(request.getParameter(ParameterNames.U_ID_BAN_USER));
+			int idBanUser = Integer.parseInt(request.getParameter(ParameterNames.U_ID));
 			service.banUserById(idBanUser);
 			request.setAttribute(AttributeNames.MESSAGE, "User successfully banned");
 		} catch (IllegalArgumentException | OperationNotExecutedException e) {

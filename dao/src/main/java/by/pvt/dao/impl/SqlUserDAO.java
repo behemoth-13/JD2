@@ -122,16 +122,30 @@ public class SqlUserDAO extends SqlDAO implements UserDAO{
     }
 
 	@Override
-	public void banUserById(int id) throws SQLException, InterruptedException {
+	public void banUserById(int userId) throws SQLException, InterruptedException {
 		Connection connection = poolInstance.take();
     	String query = SqlHelper.SQL_BAN_USER_BY_ID;
     	PreparedStatement ps = connection.prepareStatement(query);
     	
     	ps.setInt(1, Roles.BANNED_USER.getCodeRole());
-    	ps.setInt(2, id);
+    	ps.setInt(2, userId);
     	
     	ps.executeUpdate();
     	
     	poolInstance.addOpenConnection(connection);
 	}
+
+    @Override
+    public void updateUserRole(int userId, int userRole) throws InterruptedException, SQLException {
+        Connection connection = poolInstance.take();
+        String query = SqlHelper.SQL_UPDATE_USER_ROLE_BY_ID;
+        PreparedStatement ps = connection.prepareStatement(query);
+
+        ps.setInt(1, userRole);
+        ps.setInt(2, userId);
+
+        ps.executeUpdate();
+
+        poolInstance.addOpenConnection(connection);
+    }
 }

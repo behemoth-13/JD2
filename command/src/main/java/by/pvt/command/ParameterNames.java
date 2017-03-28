@@ -29,6 +29,7 @@ public class ParameterNames {
 	public static final String U_LOGIN = "ul";
 	public static final String U_EMAIL = "ue";
 	public static final String U_PHONE = "up";
+	public static final String U_ROLE = "ur";
 	public static final String U_PASSWORD = "ua";
-	public static final String U_ID_BAN_USER = "ui";
+	public static final String U_ID = "ui";
 }

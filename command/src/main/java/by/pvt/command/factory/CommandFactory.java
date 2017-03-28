@@ -18,11 +18,7 @@ import by.pvt.command.impl.order.GetOrdersByUsersId;
 import by.pvt.command.impl.order.UpdateStatusOrderByID;
 import by.pvt.command.impl.trip.GetTrips;
 import by.pvt.command.impl.trip.UpdateStatusTripByID;
-import by.pvt.command.impl.user.BanUserById;
-import by.pvt.command.impl.user.Exit;
-import by.pvt.command.impl.user.GetUsers;
-import by.pvt.command.impl.user.Logination;
-import by.pvt.command.impl.user.RegisterUser;
+import by.pvt.command.impl.user.*;
 import by.pvt.exception.InitException;
 
 public class CommandFactory implements SourceInit {
@@ -61,6 +57,7 @@ public class CommandFactory implements SourceInit {
 		map.put("tu", new UpdateStatusTripByID());
 		map.put("ub", new BanUserById());
 		map.put("ug", new GetUsers());
+		map.put("uu", new UpdateUserRole());
 		map.put("ur", new RegisterUser());
 		map.put("ul", new Logination());
 		map.put("ue", new Exit());
