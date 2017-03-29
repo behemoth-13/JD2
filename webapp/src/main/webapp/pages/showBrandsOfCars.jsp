@@ -15,43 +15,28 @@
         <div class="col-md-12">
             <div class="content-text">
                 <h2>!Марки машин</h2>
+                <form action="Controller" method="get">
+                    <button name="cm" value="bg" type="submit">заказы</button>
+                </form>
                 <table class="table">
                     <tr>
                         <th>id</th>
-                        <th>${weight}</th>
-                        <th>${capacity}</th>
-                        <th>${distance}</th>
-                        <th>${creation_date}</th>
-                        <th>${status_order}</th>
-                        <th>${date_status}</th>
+                        <th>название</th>
+                        <th>грузоподъёмность</th>
+                        <th>объём</th>
+                        <th>цена в км</th>
                     </tr>
-                    <c:forEach items="${requestScope.LIST_ORDERS}" var = "order" >
+                    <c:forEach items="${requestScope.LIST_BRANDS_OF_CARS}" var = "brand_of_car" >
                     <tr>
-                        <td>${order.id}</td>
-                        <td>${order.weight}</td>
-                        <td>${order.capacity}</td>
-                        <td>${order.distance}</td>
-                        <td>${order.creationTime}</td>
-                        <td>
-                            <c:if test="${order.statusOrder == 0}">
-                                ${order_has_come}
-                            </c:if>
-                            <c:if test="${order.statusOrder == 1}">
-                                ${order_proceed_disp}
-                            </c:if>
-                            <c:if test="${order.statusOrder == 2}">
-                                ${order_in_work}
-                            </c:if>
-                            <c:if test="${order.statusOrder == 3}">
-                                ${order_completed}
-                            </c:if>
-                            <c:if test="${order.statusOrder == 4}">
-                                ${order_rejected}
-                            </c:if>
-                        </td>
-                        <td>${order.timeStatusOrder}</td>
-                        </c:forEach>
+                        <td>${brand_of_car.id}</td>
+                        <td>${brand_of_car.name}</td>
+                        <td>${brand_of_car.loadingCapacity}</td>
+                        <td>${brand_of_car.capacity}</td>
+                        <td>${brand_of_car.costPerKM}</td>
+                    </tr>
+                    </c:forEach>
                 </table>
+
             </div>
         </div>
     </div>

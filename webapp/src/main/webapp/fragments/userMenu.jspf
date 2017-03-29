@@ -24,9 +24,7 @@
 						</form>
 					</li>
 					<li>
-						<form action="Controller" method="get">
-							<button name="cm" value="bg" type="submit">заказы</button>
-						</form>
+						<a href="add_brand_of_car">добавить марку машины</a>
 					</li>
 				</ul>
 			</nav>

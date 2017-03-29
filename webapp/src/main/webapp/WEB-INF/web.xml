@@ -68,12 +68,22 @@
     <servlet-name>make_order</servlet-name>
     <jsp-file>/pages/makeOrder.jsp</jsp-file>
   </servlet>
-  
+
   <servlet-mapping>
     <servlet-name>make_order</servlet-name>
     <url-pattern>/make_order</url-pattern>
   </servlet-mapping>
-  
+
+  <servlet>
+    <servlet-name>add_brand_of_car</servlet-name>
+    <jsp-file>/pages/addBrandOfCar.jsp</jsp-file>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>add_brand_of_car</servlet-name>
+    <url-pattern>/add_brand_of_car</url-pattern>
+  </servlet-mapping>
+
   <listener>
   		<listener-class>by.pvt.listener.SourceListener</listener-class>
   </listener>

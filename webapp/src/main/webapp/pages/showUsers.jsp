@@ -2,6 +2,7 @@
          pageEncoding="utf-8"%>
 <%@include file="../fragments/localization.jspf" %> <!-- localization -->
 <%@include file="../fragments/common.jspf"  %>
+<!DOCTYPE html PUBLIC >
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">

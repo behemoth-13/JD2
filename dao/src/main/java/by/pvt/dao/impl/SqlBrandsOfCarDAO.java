@@ -107,12 +107,14 @@ private static SqlBrandsOfCarDAO instance;
 
 	@Override
 	public boolean isBrandsOfCarsExist(String brandName) throws SQLException, InterruptedException {
-        PreparedStatement ps;
+		Connection connection = poolInstance.take();
+    	PreparedStatement ps;
         String query =  SqlHelper.SQL_GET_BRANDS_OF_CAR_BY_NAME;
-        ps = poolInstance.take().prepareStatement(query);
-        
+        ps = connection.prepareStatement(query);
+
         ps.setString(1, brandName);
         ResultSet result = ps.executeQuery();
-		return !result.wasNull();
+		poolInstance.addOpenConnection(connection);
+		return result.next();
 	}
 }

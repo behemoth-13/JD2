@@ -25,14 +25,21 @@ public class BrandsOfCarServiceImpl  extends Service implements BrandsOfCarServi
 	@Override
 	public void addBrandOfCar(BrandOfCar brand) throws OperationNotExecutedException, IllegalArgumentException{
 		BrandsOfCarDAO dao = (BrandsOfCarDAO) daoFactory.getOperationDAO(DaoName.BRANDS_OF_CAR_DAO);
-		String brandName = brand.getName();
+
+		if (brand.getName().length() > 45) {
+			throw new IllegalArgumentException("Length of name is not valid");
+		}
+		if (brand.getLoadingCapacity() > 44000) {
+			throw new IllegalArgumentException("LoadingCapacity is higher then 44000 kg");
+		}
+		if (brand.getCapacity() > 200) {
+			throw new IllegalArgumentException("!Capacity is higher then 200 m3");
+		}
 		try {
-			;
-			if (!dao.isBrandsOfCarsExist(brandName)){
-				dao.addBrandOfCar(brand);
-			} else {
-				throw new IllegalArgumentException("BrandOfCar is already exist");
+			if (dao.isBrandsOfCarsExist(brand.getName())) {
+				throw new IllegalArgumentException("Brand is exist");
 			}
+				dao.addBrandOfCar(brand);
 		} catch (SQLException | InterruptedException e) {
 			throw new OperationNotExecutedException("BrandsOfCarServiceImpl.addBrandOfCar not executed");
 		}
