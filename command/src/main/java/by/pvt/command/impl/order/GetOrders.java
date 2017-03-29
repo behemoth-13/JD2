@@ -30,7 +30,7 @@ public class GetOrders extends Command {
 		List<Order> list = null;
 		try {
 			list = service.getOrders();
-			request.setAttribute(AttributeNames.LIST_BRANDS_OF_CARS, list);
+			request.setAttribute(AttributeNames.LIST_ORDERS, list);
 		} catch (OperationNotExecutedException e) {
 			request.setAttribute(AttributeNames.EXCEPTION, e.getMessage());
 			return PageNames.EXCEPTION;

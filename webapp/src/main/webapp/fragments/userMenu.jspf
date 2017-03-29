@@ -18,6 +18,16 @@
 							<button name="cm" value="ug" type="submit">Users</button>
 						</form>
 					</li>
+					<li>
+						<form action="Controller" method="get">
+							<button name="cm" value="og" type="submit">заказы</button>
+						</form>
+					</li>
+					<li>
+						<form action="Controller" method="get">
+							<button name="cm" value="bg" type="submit">заказы</button>
+						</form>
+					</li>
 				</ul>
 			</nav>
 		</c:if>
