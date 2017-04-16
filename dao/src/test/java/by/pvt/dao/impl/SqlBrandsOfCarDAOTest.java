@@ -5,6 +5,7 @@ import by.pvt.dao.SqlDAO;
 import by.pvt.dao.pool.ConnectionPool;
 import by.pvt.exception.InitException;
 import org.junit.Before;
+import org.junit.Ignore;
 import org.junit.Test;
 
 import java.sql.SQLException;
@@ -40,6 +41,7 @@ public class SqlBrandsOfCarDAOTest extends SqlDAO{
         addBrandofCar("Toyota");
     }
 
+    @Ignore
     @Test
     public void getBrandsOfCars() throws Exception {
         addBrandofCar("Mercedes");

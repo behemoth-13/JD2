@@ -50,7 +50,6 @@
 <fmt:message bundle="${loc}" key="local.showOrdersByUserId.order_in_work" var="order_in_work"/>
 <fmt:message bundle="${loc}" key="local.showOrdersByUserId.order_completed" var="order_completed"/>
 <fmt:message bundle="${loc}" key="local.showOrdersByUserId.order_rejected" var="order_rejected"/>
-
 <fmt:message bundle="${loc}" key="local.success.success_message" var="success_message"/>
 <!-- titles of page -->
 <fmt:message bundle="${loc}" key="local.title.exception" var="exception_title"/>
@@ -62,6 +61,7 @@
 <fmt:message bundle="${loc}" key="local.title.price" var="price_title"/>
 <fmt:message bundle="${loc}" key="local.title.success" var="success_title"/>
 <!-- names of button -->
+
 <fmt:message bundle="${loc}" key="local.index.to_main" var="to_main"/>
 <fmt:message bundle="${loc}" key="local.userMenu.make_order" var="make_order"/>
 <fmt:message bundle="${loc}" key="local.index.autopark" var="autopark"/>
@@ -75,4 +75,5 @@
 <fmt:message bundle="${loc}" key="local.userMenu.profile" var="profile"/>
 <fmt:message bundle="${loc}" key="local.userMenu.make_order" var="make_order"/>
 <fmt:message bundle="${loc}" key="local.userMenu.my_orders" var="my_orders"/>
+<fmt:message bundle="${loc}" key="local.userMenu.orders" var="orders"/>
 </html>

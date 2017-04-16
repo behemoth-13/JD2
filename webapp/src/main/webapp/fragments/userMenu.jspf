@@ -20,7 +20,7 @@
 					</li>
 					<li>
 						<form action="Controller" method="get">
-							<button name="cm" value="og" type="submit">заказы</button>
+							<button name="cm" value="og" type="submit">${orders}</button>
 						</form>
 					</li>
 					<li>

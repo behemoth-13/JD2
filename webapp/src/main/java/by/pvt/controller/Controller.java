@@ -31,7 +31,7 @@ public class Controller extends HttpServlet {
 
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		request.setCharacterEncoding("UTF-8");
-		processRequest(request, response);		
+		processRequest(request, response);
 	}
 
 	protected void processRequest(HttpServletRequest request, HttpServletResponse response) {
@@ -39,6 +39,7 @@ public class Controller extends HttpServlet {
         String commandParameter = request.getParameter(ParameterNames.COMMAND);
         Command command = factory.getCommand(commandParameter);
 		String page = command.execute(request, response);
+		response.setCharacterEncoding("UTF-8");
         if(page == null) {
             page = PageNames.START_PAGE;
         }
@@ -46,7 +47,7 @@ public class Controller extends HttpServlet {
         try {
 			dispatcher.forward(request, response);
 		} catch (ServletException | IOException e) {
-			
+			//TODO
 		}
 	}
 }
