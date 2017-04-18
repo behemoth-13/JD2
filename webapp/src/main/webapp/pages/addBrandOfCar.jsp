@@ -5,7 +5,7 @@
 <!DOCTYPE html PUBLIC >
 <html>
 <head>
-    <title>!добавление новой марки машины</title>
+    <title>${addBrandOfCar_title}</title>
 </head>
 <body>
 <%@include file="../fragments/header.jspf"  %>
@@ -14,22 +14,22 @@
     <div class="col-md-12">
         <div class="row" align="center">
             <div class="row">
-                <h2>!добавление</h2>
+                <h2>${addition_brand_of_car}</h2>
 
                 <form action="Controller" method="post">
 
                     <!-- ${surname} <input type="text" maxlength="15" name="us" id="surnameForm" onKeyUp="check('surname')">
                     <p id="surname" style="color:#FF3D3D">${val_name_surname}</p>
                     <br>-->
-                    название марки <input type="text" maxlength="15" name="bn">
+                    ${brand_of_car} <input type="text" maxlength="15" name="bn">
                     <br>
-                    грузоподъёмность <input type="text" maxlength="15" name="bl">
+                    ${loadingCapacity} <input type="text" maxlength="15" name="bl">
                     <br>
-                    объем <input type="text" maxlength="15" name="bc">
+                    ${capacity} <input type="text" maxlength="15" name="bc">
                     <br>
-                    цена в км <input type="text" name="bp">
+                    ${cost_per_km} <input type="text" name="bp">
                     <br>
-                    <button class="button" name="cm" value="ba" type="submit">добавить</button>
+                    <button class="button" name="cm" value="ba" type="submit">${add_brand_of_car}</button>
                 </form>
             </div>
         </div>

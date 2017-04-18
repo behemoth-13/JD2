@@ -8,7 +8,7 @@ public class BrandOfCar implements Serializable {
 	
 	private int id;
 	private String name;
-	private int loadingCapacity;
+	private int loadingCapacity; //грузоподъемность
 	private int capacity;
 	private int costPerKM;
 	

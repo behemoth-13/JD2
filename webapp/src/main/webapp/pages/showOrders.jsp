@@ -14,7 +14,7 @@
     <div class="container">
         <div class="col-md-12">
             <div class="content-text">
-                <h2>заказы</h2>
+                <h2>${orders}</h2>
                 <table class="table">
                     <tr>
                         <th>id</th>

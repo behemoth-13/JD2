@@ -51,6 +51,12 @@
 <fmt:message bundle="${loc}" key="local.showOrdersByUserId.order_completed" var="order_completed"/>
 <fmt:message bundle="${loc}" key="local.showOrdersByUserId.order_rejected" var="order_rejected"/>
 <fmt:message bundle="${loc}" key="local.success.success_message" var="success_message"/>
+<fmt:message bundle="${loc}" key="local.addBrandOfCar.addition" var="addition_brand_of_car"/>
+<fmt:message bundle="${loc}" key="local.addBrandOfCar.brandOfCar" var="brand_of_car"/>
+<fmt:message bundle="${loc}" key="local.addBrandOfCar.loadingCapacity" var="loadingCapacity"/>
+<fmt:message bundle="${loc}" key="local.addBrandOfCar.capacity" var="capacity"/>
+<fmt:message bundle="${loc}" key="local.addBrandOfCar.cost_per_km" var="cost_per_km"/>
+<fmt:message bundle="${loc}" key="local.addBrandOfCar.add_brand_of_car" var="add_brand_of_car"/>
 <!-- titles of page -->
 <fmt:message bundle="${loc}" key="local.title.exception" var="exception_title"/>
 <fmt:message bundle="${loc}" key="local.title.index" var="index_title"/>
@@ -60,6 +66,7 @@
 <fmt:message bundle="${loc}" key="local.title.about" var="about_title"/>
 <fmt:message bundle="${loc}" key="local.title.price" var="price_title"/>
 <fmt:message bundle="${loc}" key="local.title.success" var="success_title"/>
+<fmt:message bundle="${loc}" key="local.title.addBrandOfCar" var="addBrandOfCar_title"/>
 <!-- names of button -->
 
 <fmt:message bundle="${loc}" key="local.index.to_main" var="to_main"/>
@@ -75,5 +82,7 @@
 <fmt:message bundle="${loc}" key="local.userMenu.profile" var="profile"/>
 <fmt:message bundle="${loc}" key="local.userMenu.make_order" var="make_order"/>
 <fmt:message bundle="${loc}" key="local.userMenu.my_orders" var="my_orders"/>
+<fmt:message bundle="${loc}" key="local.userMenu.users" var="users"/>
 <fmt:message bundle="${loc}" key="local.userMenu.orders" var="orders"/>
+<fmt:message bundle="${loc}" key="local.userMenu.add_brand_of_car" var="add_brand_of_car"/>
 </html>

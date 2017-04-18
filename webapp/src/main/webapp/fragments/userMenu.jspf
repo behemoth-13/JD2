@@ -15,7 +15,7 @@
 					<li><a href="profile">${profile}</a></li>
 					<li>
 						<form action="Controller" method="get">
-							<button name="cm" value="ug" type="submit">Users</button>
+							<button name="cm" value="ug" type="submit">${users}</button>
 						</form>
 					</li>
 					<li>
@@ -24,7 +24,7 @@
 						</form>
 					</li>
 					<li>
-						<a href="add_brand_of_car">добавить марку машины</a>
+						<a href="add_brand_of_car">${add_brand_of_car}</a>
 					</li>
 				</ul>
 			</nav>
