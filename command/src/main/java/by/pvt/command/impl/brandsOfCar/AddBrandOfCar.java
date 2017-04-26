@@ -31,7 +31,7 @@ public class AddBrandOfCar extends Command {
 			brandOfCar.setName(request.getParameter(ParameterNames.BOC_NAME).trim());
 			brandOfCar.setLoadingCapacity(Integer.parseInt(request.getParameter(ParameterNames.BOC_LOADING_CAPACITY).trim()));
 			brandOfCar.setCapacity(Integer.parseInt(request.getParameter(ParameterNames.BOC_CAPACITY).trim()));
-			brandOfCar.setCostPerKM(Integer.parseInt(request.getParameter(ParameterNames.BOC_COST_PER_KM).trim()));
+			brandOfCar.setCostPerKM(Double.parseDouble(request.getParameter(ParameterNames.BOC_COST_PER_KM).trim()));
 			service.addBrandOfCar(brandOfCar);
 			request.setAttribute(AttributeNames.MESSAGE, "Brand of car successfully added");
 		} catch (IllegalArgumentException | OperationNotExecutedException e) {

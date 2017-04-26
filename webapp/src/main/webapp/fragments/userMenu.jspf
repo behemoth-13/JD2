@@ -26,6 +26,9 @@
 					<li>
 						<a href="add_brand_of_car">${add_brand_of_car}</a>
 					</li>
+					<li>
+						<a href="add_car">${add_brand_of_car}</a>
+					</li>
 				</ul>
 			</nav>
 		</c:if>

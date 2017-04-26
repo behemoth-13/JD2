@@ -57,6 +57,10 @@
 <fmt:message bundle="${loc}" key="local.addBrandOfCar.capacity" var="capacity"/>
 <fmt:message bundle="${loc}" key="local.addBrandOfCar.cost_per_km" var="cost_per_km"/>
 <fmt:message bundle="${loc}" key="local.addBrandOfCar.add_brand_of_car" var="add_brand_of_car"/>
+<fmt:message bundle="${loc}" key="local.addBrandOfCar.val_brand_of_car" var="val_brand_of_car"/>
+<fmt:message bundle="${loc}" key="local.addBrandOfCar.val_loadingCapacity" var="val_loadingCapacity"/>
+<fmt:message bundle="${loc}" key="local.addBrandOfCar.val_capacity" var="val_capacity"/>
+<fmt:message bundle="${loc}" key="local.addBrandOfCar.val_cost_per_km" var="val_cost_per_km"/>
 <!-- titles of page -->
 <fmt:message bundle="${loc}" key="local.title.exception" var="exception_title"/>
 <fmt:message bundle="${loc}" key="local.title.index" var="index_title"/>

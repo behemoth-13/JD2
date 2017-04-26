@@ -41,7 +41,7 @@ private static SqlBrandsOfCarDAO instance;
     	ps.setString(1, brand.getName());
     	ps.setInt(2, brand.getLoadingCapacity());
     	ps.setInt(3, brand.getCapacity());
-    	ps.setInt(4, brand.getCostPerKM());
+    	ps.setDouble(4, brand.getCostPerKM());
     	ps.executeUpdate();
     	
     	poolInstance.addOpenConnection(connection);
@@ -61,7 +61,7 @@ private static SqlBrandsOfCarDAO instance;
     		brand.setName(set.getString(COLUMN_NAME_BRAND_OF_CAR));
     		brand.setLoadingCapacity(set.getInt(COLUMN_NAME_LOADING_CAPACITY));
     		brand.setCapacity(set.getInt(COLUMN_NAME_CAPACITY));
-    		brand.setCostPerKM(set.getInt(COLUMN_NAME_COST_PER_KM));
+    		brand.setCostPerKM(set.getDouble(COLUMN_NAME_COST_PER_KM));
     		
     		list.add(brand);
     	}
@@ -84,7 +84,7 @@ private static SqlBrandsOfCarDAO instance;
     		brand.setName(set.getString(COLUMN_NAME_BRAND_OF_CAR));
     		brand.setLoadingCapacity(set.getInt(COLUMN_NAME_LOADING_CAPACITY));
     		brand.setCapacity(set.getInt(COLUMN_NAME_CAPACITY));
-    		brand.setCostPerKM(set.getInt(COLUMN_NAME_COST_PER_KM));
+    		brand.setCostPerKM(set.getDouble(COLUMN_NAME_COST_PER_KM));
     		
     		map.put(id, brand);
     	}

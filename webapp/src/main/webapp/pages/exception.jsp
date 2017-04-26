@@ -11,7 +11,7 @@
 </head>
 <body>
 	<%@include file="../fragments/header.jspf"  %>
-		произлщла следующая ошибка
+		произошла следующая ошибка
 	
 	<h2>${EXCEPTION}</h2><br>
 	<form action="main" method="get">

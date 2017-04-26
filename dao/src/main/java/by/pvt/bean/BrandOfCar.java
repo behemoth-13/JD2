@@ -10,7 +10,7 @@ public class BrandOfCar implements Serializable {
 	private String name;
 	private int loadingCapacity; //грузоподъемность
 	private int capacity;
-	private int costPerKM;
+	private double costPerKM;
 	
 	
 	public int getId() {
@@ -25,7 +25,7 @@ public class BrandOfCar implements Serializable {
 	public int getCapacity() {
 		return capacity;
 	}
-	public int getCostPerKM() {
+	public double getCostPerKM() {
 		return costPerKM;
 	}
 	
@@ -42,7 +42,7 @@ public class BrandOfCar implements Serializable {
 	public void setCapacity(int capacity) {
 		this.capacity = capacity;
 	}
-	public void setCostPerKM(int costPerKM) {
+	public void setCostPerKM(double costPerKM) {
 		this.costPerKM = costPerKM;
 	}
 }

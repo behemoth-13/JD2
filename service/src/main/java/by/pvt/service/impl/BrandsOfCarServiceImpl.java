@@ -29,12 +29,15 @@ public class BrandsOfCarServiceImpl  extends Service implements BrandsOfCarServi
 		if (brand.getName().length() > 45 || brand.getName().length() < 3) {
 			throw new IllegalArgumentException("Length of name is not valid");
 		}
-		if (brand.getLoadingCapacity() > 44000 || brand.getLoadingCapacity() < 1) {
-			throw new IllegalArgumentException("LoadingCapacity is higher then 44000 kg");
+		if (brand.getLoadingCapacity() > 44000 || brand.getLoadingCapacity() < 100) {
+			throw new IllegalArgumentException("LoadingCapacity is higher then 44000 kg or less than 100 kg");
 		}
-		if (brand.getCapacity() > 200 || brand.getCapacity() <1) {
-			throw new IllegalArgumentException("!Capacity is higher then 200 m3");
+		if (brand.getCapacity() > 200 || brand.getCapacity() < 1) {
+			throw new IllegalArgumentException("Capacity is higher then 200 m3 or less then 1 m3");
 		}
+        if (brand.getCostPerKM() <= 0) {
+            throw new IllegalArgumentException("Cost per km less or 0 BYN");
+        }
 		try {
 			if (dao.isBrandsOfCarsExist(brand.getName())) {
 				throw new IllegalArgumentException("Brand is exist");
